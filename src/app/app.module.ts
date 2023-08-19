@@ -14,6 +14,9 @@ import { PagesComponent } from './components/pages/pages.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { SettingsComponent } from './components/settings/settings.component';
 
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,9 @@ import { SettingsComponent } from './components/settings/settings.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
