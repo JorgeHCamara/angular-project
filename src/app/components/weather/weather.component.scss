@@ -8,10 +8,6 @@
   --shadow-light: rgba(255,255,255,0.1);
 }
 
-#weather-title {
-  margin-bottom: 40px;
-}
-
 .weather-body {
   display: flex;
   justify-content: center;
@@ -130,3 +126,18 @@
   color: #FFF;
 }
 
+.search {
+  margin-bottom: 1em;
+  text-align: center;
+  color: #FFF;
+}
+
+.search input {
+  background-color: #3C429E;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 1em;
+  color: #FFF;
+  text-align: center;
+}
