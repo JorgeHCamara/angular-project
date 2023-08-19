@@ -4,15 +4,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BodyComponent } from './body/body.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProductsComponent } from './products/products.component';
-import { StatisticsComponent } from './statistics/statistics.component';
-import { CoupensComponent } from './coupens/coupens.component';
-import { PagesComponent } from './pages/pages.component';
-import { WeatherComponent } from './weather/weather.component';
-import { SettingsComponent } from './settings/settings.component';
+import { BodyComponent } from './components/body/body.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ProductsComponent } from './components/products/products.component';
+import { StatisticsComponent } from './components/statistics/statistics.component';
+import { CoupensComponent } from './components/coupens/coupens.component';
+import { PagesComponent } from './components/pages/pages.component';
+import { WeatherComponent } from './components/weather/weather.component';
+import { SettingsComponent } from './components/settings/settings.component';
 
 @NgModule({
   declarations: [
