@@ -9,7 +9,7 @@ import { WeatherComponent } from './components/weather/weather.component';
 import { SettingsComponent } from './components/settings/settings.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'dash', pathMatch: 'full'},
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'statistics', component: StatisticsComponent},

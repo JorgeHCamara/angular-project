@@ -8,7 +8,7 @@
 
 <div class="weather-body">
 
-  <div class="container" *ngIf="weatherData">
+  <div class="container" *ngIf="weatherData else skeleton">
     <div class="upper-data">
       <img src="../../assets/images/hot.jpg" *ngIf="weatherData.main.temp > 59" alt="Hot icon">
       <img src="../../assets/images/cold.jpg" *ngIf="weatherData.main.temp <= 59" alt="Cold icon">
@@ -127,3 +127,7 @@
     </div>
   </div>
 </div> -->
+
+<ng-template #skeleton>
+  <h2>Weather API not working at the moment, please try again another time.</h2>
+</ng-template>
