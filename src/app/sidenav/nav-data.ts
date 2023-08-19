@@ -25,9 +25,9 @@ export const navbarData = [
     label: 'Pages'
   },
   {
-    routeLink: 'media',
-    icon: 'fal fa-camera',
-    label: 'Media'
+    routeLink: 'weather',
+    icon: 'fal fa-cloud',
+    label: 'Weather'
   },
   {
     routeLink: 'settings',
