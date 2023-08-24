@@ -10,7 +10,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductsComponent } from './components/products/products.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { CoupensComponent } from './components/coupens/coupens.component';
-import { PagesComponent } from './components/pages/pages.component';
+import { CryptoComponent } from './components/crypto/crypto.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { SettingsComponent } from './components/settings/settings.component';
 
@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     ProductsComponent,
     StatisticsComponent,
     CoupensComponent,
-    PagesComponent,
+    CryptoComponent,
     WeatherComponent,
     SettingsComponent
   ],

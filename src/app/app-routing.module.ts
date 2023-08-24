@@ -4,7 +4,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductsComponent } from './components/products/products.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { CoupensComponent } from './components/coupens/coupens.component';
-import { PagesComponent } from './components/pages/pages.component';
+import { CryptoComponent } from './components/crypto/crypto.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { SettingsComponent } from './components/settings/settings.component';
 
@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'products', component: ProductsComponent},
   {path: 'statistics', component: StatisticsComponent},
   {path: 'coupens', component: CoupensComponent},
-  {path: 'pages', component: PagesComponent},
+  {path: 'crypto', component: CryptoComponent},
   {path: 'weather', component: WeatherComponent},
   {path: 'settings', component: SettingsComponent},
 ];

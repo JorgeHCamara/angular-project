@@ -20,9 +20,9 @@ export const navbarData = [
     label: 'Coupens'
   },
   {
-    routeLink: 'pages',
+    routeLink: 'crypto',
     icon: 'fal fa-file',
-    label: 'Pages'
+    label: 'Crypto'
   },
   {
     routeLink: 'weather',
