@@ -26,7 +26,7 @@ export class CryptoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get<CryptoData[]>('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=25&page=1&sparkline=false')
+    this.http.get<CryptoData[]>('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=25&page=1&sparkline=false' /*''*/)
     .subscribe(
       (res) => {
         console.log(res);

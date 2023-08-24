@@ -1,4 +1,4 @@
-<h1>Weather</h1>
+<h1 class="page-title">Weather</h1>
 
 <div class="search">
   <form #form="ngForm" (submit)="onSubmit()">
@@ -129,5 +129,7 @@
 </div> -->
 
 <ng-template #skeleton>
-  <h2>The Weather API have exceeded the MONTHLY quota for requests of the free plan, please try again another time.</h2>
+  <div class="skeleton-div">
+    <h2 class="skeleton-text">The Weather API have exceeded the MONTHLY quota for requests of the free plan, please try again another time.</h2>
+  </div>
 </ng-template>

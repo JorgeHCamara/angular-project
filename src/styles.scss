@@ -11,13 +11,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.page-title {
+  color: #e6edef;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   border-radius: .5rem;
   background-color: #fff;
   margin: 1.25rem 0 1.25rem 0;
-  box-shadow: 0 .25rem .5rem #e6edef;
+  box-shadow: 0.1rem .25rem .1rem #e6edef;
 
   .card-head {
     padding: 1rem 1.5rem;
@@ -29,4 +33,15 @@ body {
   .card-body {
     padding: 1rem 1.5rem;
   }
+}
+
+.skeleton-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.125rem;
+}
+
+.skeleton-text {
+  color: #e6edef;
 }
