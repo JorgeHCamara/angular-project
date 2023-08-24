@@ -1,1 +1,51 @@
 <h1>Cryptocurrency</h1>
+<div class="container">
+
+  <div class="crypto-search">
+    <input
+      type="text"
+      class="form-control bg-dark text-light border-0 my-4"
+      (keyup)="searchCrypto()"
+      [(ngModel)]="searchText"
+      >
+  </div>
+
+  <table class="table table-dark" *ngIf="cryptoData else skeleton">
+    <thead>
+      <tr>
+        <th *ngFor="let title of titles">
+          {{ title }}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let crypto of filteredCryptoData; let i = index">
+        <td>
+          {{ i + 1 }}
+        </td>
+        <td>
+          <img class="crypto-images" [src]="crypto.image" alt="{{ crypto.name }}">
+          <span class="ms-3">
+            {{ crypto.name }}
+          </span>
+          <span class="crypto-symbol text-uppercase ms-2">
+            {{ crypto.symbol }}
+          </span>
+        </td>
+        <td>
+          US$ {{ crypto.current_price }}
+        </td>
+        <td [ngClass]="crypto.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'">
+          {{ crypto.price_change_percentage_24h.toLocaleString() }}
+        </td>
+        <td>
+          {{ crypto.total_supply.toLocaleString() }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #skeleton>
+  <h2>Crypto API not working at the moment, please try again another time.</h2>
+</ng-template>

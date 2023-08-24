@@ -21,7 +21,7 @@ export const navbarData = [
   },
   {
     routeLink: 'crypto',
-    icon: 'fal fa-file',
+    icon: 'fa-brands fa-btc',
     label: 'Crypto'
   },
   {
