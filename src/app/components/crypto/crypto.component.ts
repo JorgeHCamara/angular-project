@@ -11,7 +11,7 @@ export class CryptoComponent implements OnInit {
 
   cryptoData: CryptoData[] = [];
   filteredCryptoData: CryptoData[] = [];
-  titles: string[] = [] = ['#', 'Crypto', 'Price', 'Price Change (24h)', '24h Volume']
+  titles: string[] = [] = ['#', 'Crypto', 'Price', 'Price Change (24h)', 'Total Supply', 'Market Cap']
   searchText = '';
 
   constructor(private http: HttpClient) {

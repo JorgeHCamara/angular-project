@@ -10,7 +10,7 @@
       >
   </div>
 
-  <table class="table table-dark" *ngIf="cryptoData else skeleton">
+  <table class="table table-dark" *ngIf="cryptoData.length > 0 else skeleton">
     <thead>
       <tr>
         <th *ngFor="let title of titles">
@@ -40,6 +40,9 @@
         </td>
         <td>
           {{ crypto.total_supply.toLocaleString() }}
+        </td>
+        <td>
+          US$ {{ crypto.market_cap.toLocaleString() }}
         </td>
       </tr>
     </tbody>
