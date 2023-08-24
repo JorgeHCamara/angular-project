@@ -1,10 +1,11 @@
 <h1 class="page-title">Cryptocurrency</h1>
 <div class="container">
 
-  <div class="crypto-search">
+  <div class="crypto-search" *ngIf="cryptoData.length > 0">
     <input
       type="text"
-      class="form-control bg-dark text-light border-0 my-4"
+      placeholder="Search..."
+      class="form-control text-light border-0 my-4 crypto-search-input"
       (keyup)="searchCrypto()"
       [(ngModel)]="searchText"
       >
@@ -33,7 +34,7 @@
           </span>
         </td>
         <td>
-          US$ {{ crypto.current_price }}
+          US$ {{ crypto.current_price.toLocaleString() }}
         </td>
         <td [ngClass]="crypto.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'">
           {{ crypto.price_change_percentage_24h.toLocaleString() }}
@@ -50,7 +51,7 @@
 </div>
 
 <ng-template #skeleton>
-  <div class="crypto-skeleton-div">
+  <div class="crypto-skeleton-div skeleton-div">
     <h2 class="skeleton-text">Crypto API not working at the moment, please try again another time.</h2>
   </div>
 </ng-template>

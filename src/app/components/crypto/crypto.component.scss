@@ -1,6 +1,6 @@
 .crypto-search {
   width: 20rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .crypto-images {
@@ -13,4 +13,13 @@
 
 .crypto-skeleton-div {
   overflow-x: hidden;
+}
+
+.crypto-search-input {
+  background-color: #212529;
+}
+
+::placeholder {
+  color: #e6edef;
+  opacity: 0.4;
 }
