@@ -5,3 +5,16 @@
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, sunt culpa! Sequi mollitia rerum deserunt alias dolorem dolor autem culpa hic fugit architecto nemo, quisquam, suscipit repellendus atque omnis voluptas!
   </div>
 </div>
+
+<div>
+  <h1 class="page-title">Dashboard</h1>
+  <input type="text" [(ngModel)]="newTaskTitle" placeholder="Título da Tarefa">
+  <input type="text" [(ngModel)]="newTask" (keyup.enter)="addTask()" placeholder="Descrição da Tarefa">
+  <button (click)="addTask()">Adicionar</button>
+  <div class="card" *ngFor="let task of tasks; let i = index">
+      <div class="card-head">{{ task.title }}</div> <!-- Exibir o título da tarefa -->
+      <div class="card-body">{{ task.content }}</div> <!-- Exibir a descrição da tarefa -->
+      <button (click)="removeTask(i)">Remover</button>
+  </div>
+</div>
+
