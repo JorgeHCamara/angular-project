@@ -48,6 +48,10 @@ input {
   margin: auto;
 }
 
+#delete-task-icon {
+  background-color: red;
+}
+
 @media (max-width: 768px) {
   input {
     width: 15rem;

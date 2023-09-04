@@ -24,10 +24,16 @@ body {
   box-shadow: 0.1rem .25rem .1rem #e6edef;
 
   .card-head {
+    display: flex;
+    justify-content: space-between;
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #edf1f7;
     font-size: 1rem;
     font-weight: 600;
+  }
+
+  i {
+    cursor: pointer;
   }
 
   .card-body {
