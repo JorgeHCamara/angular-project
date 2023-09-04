@@ -12,9 +12,7 @@
     </div>
   </div>
   <div class="card" *ngFor="let task of tasks; let i = index">
-      <div class="card-head">{{ task.title }}</div> <!-- Exibir o título da tarefa -->
+      <div class="card-head">{{ task.title }} <i class="fas fa-trash-alt delete-task-icon" (click)="removeTask(i)"></i></div> <!-- Exibir o título da tarefa -->
       <div class="card-body">{{ task.content }}</div> <!-- Exibir a descrição da tarefa -->
-      <button id="task-remove-button" (click)="removeTask(i)">Delete</button>
   </div>
 </div>
-
