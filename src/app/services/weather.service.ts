@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { enviroment } from 'src/environments/enviroment';
+import { enviroment } from 'src/environments/weather-enviroment';
 import { WeatherData } from '../models/weather.model';
 import { Observable } from 'rxjs';
 
