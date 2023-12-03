@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { CryptoData } from 'src/app/models/crypto.model';
+import { CryptoService } from 'src/app/services/crypto.service';
 
 @Component({
   selector: 'app-crypto',
@@ -14,9 +15,7 @@ export class CryptoComponent implements OnInit {
   titles: string[] = [] = ['#', 'Crypto', 'Price', 'Price Change (24h)', 'Total Supply', 'Market Cap']
   searchText = '';
 
-  constructor(private http: HttpClient) {
-
-  }
+  constructor(private cryptoService: CryptoService) { }
 
   searchCrypto() {
     this.filteredCryptoData = this.cryptoData.filter((crypto) =>
@@ -26,13 +25,11 @@ export class CryptoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get<CryptoData[]>('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=25&page=1&sparkline=false')
-    .subscribe(
+    this.cryptoService.getCryptoData().subscribe(
       (res) => {
-        console.log(res);
         this.cryptoData = res;
         this.filteredCryptoData = res;
-    },
+      },
       (err) => console.log(err)
     )
   }
